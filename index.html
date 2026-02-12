@@ -33,66 +33,75 @@
   </head>
 
   <body>
-<!-- ================= TOP BAR ================= -->
-<div class="top-bar">
-  <div class="container">
-    <div class="top-bar-content">
+    <!-- ================= TOP BAR ================= -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <!-- Left Side -->
+          <div class="top-left">
+            <span><i class="bi bi-geo-alt-fill"></i> Kolkata, West Bengal</span>
+            <span><i class="bi bi-telephone-fill"></i> +91 98765 43210</span>
+            <span><i class="bi bi-envelope-fill"></i> info@wemovers.com</span>
+          </div>
 
-      <!-- Left Side -->
-      <div class="top-left">
-        <span><i class="bi bi-geo-alt-fill"></i> Kolkata, West Bengal</span>
-        <span><i class="bi bi-telephone-fill"></i> +91 98765 43210</span>
-        <span><i class="bi bi-envelope-fill"></i> info@wemovers.com</span>
+          <!-- Right Side -->
+          <div class="top-right">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
       </div>
-
-      <!-- Right Side -->
-      <div class="top-right">
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-twitter-x"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container">
-
-    <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <img src="./image/logo.png" height="60" alt="We Movers" />
-    </a>
-
-    <!-- Mobile Toggle -->
-    <button
-      class="navbar-toggler border-0"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-    >
-      <i class="bi bi-list text-white fs-1"></i>
-    </button>
-
-    <!-- Menu -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav align-items-lg-center gap-lg-4 text-center">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tracking">Tracking</a></li>
-        <li class="nav-item"><a class="nav-link" href="#whychoose">Why Choose Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
     </div>
 
-  </div>
-</nav>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./image/logo.png" height="60" alt="We Movers" />
+        </a>
 
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-list text-dark fs-1"></i>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-lg-center gap-lg-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tracking">Tracking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whychoose">Why Choose Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- ================= HERO SECTION (SWIPER) ================= -->
 
@@ -777,81 +786,76 @@
       </div>
     </section>
 
-<!-- ================== REVIEW SECTION ================== -->
-<section class="review-section py-5">
-  <div class="container">
+    <!-- ================== REVIEW SECTION ================== -->
+    <section class="review-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="review-title">What Our Clients Say</h2>
+          <p class="review-subtitle">Trusted Moving Partner Across India</p>
+        </div>
 
-    <div class="text-center mb-5">
-      <h2 class="review-title">What Our Clients Say</h2>
-      <p class="review-subtitle">Trusted Moving Partner Across India</p>
-    </div>
+        <div class="swiper myReviewSwiper">
+          <div class="swiper-wrapper">
+            <!-- Review 1 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  We Movers handled my relocation professionally. All items
+                  arrived safely and on time. Highly recommend their services.
+                </p>
+                <div class="client-info">
+                  <img src="https://randomuser.me/api/portraits/men/45.jpg" />
+                  <div>
+                    <h6>Rahul Sharma</h6>
+                    <span>Mumbai</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <div class="swiper myReviewSwiper">
-      <div class="swiper-wrapper">
+            <!-- Review 2 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  Excellent tracking system and transparent pricing. My office
+                  shifting was smooth without any delay.
+                </p>
+                <div class="client-info">
+                  <img src="https://randomuser.me/api/portraits/women/32.jpg" />
+                  <div>
+                    <h6>Priya Mehta</h6>
+                    <span>Delhi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <!-- Review 1 -->
-        <div class="swiper-slide">
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>
-              We Movers handled my relocation professionally. All items arrived safely and on time. 
-              Highly recommend their services.
-            </p>
-            <div class="client-info">
-              <img src="https://randomuser.me/api/portraits/men/45.jpg">
-              <div>
-                <h6>Rahul Sharma</h6>
-                <span>Mumbai</span>
+            <!-- Review 3 -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  Very professional team and quick support. My goods were
+                  delivered faster than expected.
+                </p>
+                <div class="client-info">
+                  <img src="https://randomuser.me/api/portraits/men/75.jpg" />
+                  <div>
+                    <h6>Amit Verma</h6>
+                    <span>Bangalore</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Review 2 -->
-        <div class="swiper-slide">
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>
-              Excellent tracking system and transparent pricing. My office shifting was smooth 
-              without any delay.
-            </p>
-            <div class="client-info">
-              <img src="https://randomuser.me/api/portraits/women/32.jpg">
-              <div>
-                <h6>Priya Mehta</h6>
-                <span>Delhi</span>
-              </div>
-            </div>
-          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination mt-4"></div>
         </div>
-
-        <!-- Review 3 -->
-        <div class="swiper-slide">
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>
-              Very professional team and quick support. My goods were delivered faster than expected.
-            </p>
-            <div class="client-info">
-              <img src="https://randomuser.me/api/portraits/men/75.jpg">
-              <div>
-                <h6>Amit Verma</h6>
-                <span>Bangalore</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination mt-4"></div>
-
-    </div>
-
-  </div>
-</section>
-
+    </section>
 
     <!-- ================= CONTACT SECTION ================= -->
     <section class="contact-section py-5" id="contact">
@@ -1037,4 +1041,3 @@
     <script src="./js/script.js"></script>
   </body>
 </html>
-
