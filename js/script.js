@@ -12,10 +12,10 @@ var swiper = new Swiper(".heroSwiper", {
 
 
 /* Navbar scroll background */
-window.addEventListener("scroll", function () {
-    let navbar = document.querySelector(".custom-navbar");
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".custom-navbar");
     navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
+  });
 /* ================= ACTIVE NAVBAR ON SCROLL ================= */
 
 const sections = document.querySelectorAll("section");
@@ -97,3 +97,24 @@ distanceRange.addEventListener("input", calculatePrice);
 calculatePrice();
 
 
+var swiper = new Swiper(".myReviewSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      }
+    }
+  });
