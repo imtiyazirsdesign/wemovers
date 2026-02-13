@@ -1,8 +1,14 @@
-body {
+* {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden !important;
+}
+
 /* ================= TOP BAR ================= */
 
 .top-bar {
@@ -56,10 +62,11 @@ body {
   padding: 18px 0;
   transition: all 0.4s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
 }
 
 .custom-navbar .nav-link {
-  color: 8bc34a;
+  color: #222;
   font-weight: 600 !important;
   letter-spacing: 0.5px;
   transition: 0.3s;
@@ -86,10 +93,8 @@ body {
   width: 100%;
 }
 
-/* Scroll effect */
 .custom-navbar.scrolled {
-  background: white;
-  backdrop-filter: blur(10px);
+  background: #ffffff;
   padding: 12px 0;
 }
 
@@ -118,12 +123,10 @@ body {
 
 /* ================= HERO SECTION ================= */
 
-.hero-section {
-  height: 80vh;
-}
-
+.hero-section,
 .heroSwiper {
   height: 80vh;
+  overflow-x: hidden !important;
 }
 
 .swiper-slide {
@@ -135,20 +138,16 @@ body {
   justify-content: center;
 }
 
-/* Background Images */
 .slide-1 {
   background-image: url("../image/hero-img1.png");
 }
-
 .slide-2 {
   background-image: url("../image/hero-img2.png");
 }
-
 .slide-3 {
   background-image: url("../image/hero-img3.png");
 }
 
-/* Overlay */
 .overlay {
   position: absolute;
   width: 100%;
@@ -160,7 +159,6 @@ body {
   );
 }
 
-/* Content Center */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -197,20 +195,25 @@ body {
 }
 
 /* Pagination Dots */
-.swiper-pagination-bullet {
+/* Scoped Pagination */
+.heroSwiper .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 0.5;
 }
 
-.swiper-pagination-bullet-active {
+.heroSwiper .swiper-pagination-bullet-active {
   background: #8bc34a;
   opacity: 1;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero-section,
+  .heroSwiper {
+    height: 60vh;
+  }
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .hero-content {
@@ -420,6 +423,10 @@ body {
 
 .tracking-section {
   margin-top: 0;
+}
+
+.tracking-image {
+  min-height: 400px;
 }
 
 .tracking-image img {
@@ -1007,6 +1014,7 @@ body {
 .review-section {
   background: linear-gradient(135deg, #1e7e34, #28a745);
   color: #fff;
+  overflow-x: hidden !important;
 }
 
 .review-title {
@@ -1070,11 +1078,11 @@ body {
 }
 
 /* Pagination Dots */
-.swiper-pagination-bullet {
+.myReviewSwiper .swiper-pagination-bullet {
   background: #c8e6c9;
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
+.myReviewSwiper .swiper-pagination-bullet-active {
   background: #ffffff;
 }

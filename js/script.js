@@ -12,10 +12,11 @@ var swiper = new Swiper(".heroSwiper", {
 
 
 /* Navbar scroll background */
-  window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".custom-navbar");
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
-  });
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".custom-navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
 /* ================= ACTIVE NAVBAR ON SCROLL ================= */
 
 const sections = document.querySelectorAll("section");
