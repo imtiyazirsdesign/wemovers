@@ -7,11 +7,9 @@
 
 body {
   overflow-x: hidden !important;
-  
 }
 
-
-section{
+section {
   overflow: hidden;
 }
 
@@ -131,7 +129,7 @@ section{
 
 .hero-section,
 .heroSwiper {
-  height: 80vh;
+  height: 70vh;
   overflow-x: hidden !important;
 }
 
