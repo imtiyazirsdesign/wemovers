@@ -570,6 +570,7 @@ section {
 
 .form-control,
 .form-select {
+  border-color: #1f7a3f !important;
   border-radius: 10px;
   padding: 10px 15px;
 }
@@ -1089,4 +1090,15 @@ section {
 
 .myReviewSwiper .swiper-pagination-bullet-active {
   background: #ffffff;
+}
+.footer-credit {
+  color: #00c853;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-credit:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }

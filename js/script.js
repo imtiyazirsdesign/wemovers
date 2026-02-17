@@ -73,7 +73,7 @@ const distanceRange = document.getElementById("distanceRange");
 const distanceValue = document.getElementById("distanceValue");
 
 const baseCost = document.getElementById("baseCost");
-const gstCost = document.getElementById("gstCost");
+const taxCost = document.getElementById("taxCost");
 const totalCost = document.getElementById("totalCost");
 
 function calculatePrice() {
@@ -81,16 +81,16 @@ function calculatePrice() {
 
     distanceValue.textContent = distance;
 
-    // 🔥 Fixed Rate ₹500 Per KM
-    let ratePerKm = 500;
+    // 🔥 $15 Per KM
+    let ratePerKm = 15;
 
     let base = distance * ratePerKm;
-    let gst = base * 0.18;
-    let total = base + gst;
+    let tax = base * 0.10; // 10% international service tax
+    let total = base + tax;
 
-    baseCost.textContent = "₹" + base.toLocaleString();
-    gstCost.textContent = "₹" + Math.round(gst).toLocaleString();
-    totalCost.textContent = "₹" + Math.round(total).toLocaleString();
+    baseCost.textContent = "$" + base.toLocaleString();
+    taxCost.textContent = "$" + Math.round(tax).toLocaleString();
+    totalCost.textContent = "$" + Math.round(total).toLocaleString();
 }
 
 distanceRange.addEventListener("input", calculatePrice);
@@ -98,6 +98,7 @@ distanceRange.addEventListener("input", calculatePrice);
 calculatePrice();
 
 
+/* ================= REVIEW ================= */
 var swiper = new Swiper(".myReviewSwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
